@@ -12,3 +12,19 @@ spec:
       port: 80
       nodePort: 30080
   type: NodePort
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp-service-queue
+
+spec:
+  selector: 
+    app: webapp-queue
+    release: "1"
+  ports:
+    - name: http
+      port: 8161
+      nodePort: 30010
+  type: NodePort
