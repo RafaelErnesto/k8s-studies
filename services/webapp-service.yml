@@ -17,14 +17,17 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: webapp-service-queue
+  name: queue
 
 spec:
   selector: 
-    app: webapp-queue
-    release: "1"
+    app: queue
   ports:
     - name: http
       port: 8161
       nodePort: 30010
+    
+    - name: endpoint
+      port: 61616
+
   type: NodePort
