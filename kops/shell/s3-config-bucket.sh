@@ -5,3 +5,4 @@ aws s3api create-bucket \
     --region us-east-1
 
 aws s3api put-bucket-versioning --bucket devlab-kops-state-store  --versioning-configuration Status=Enabled
+
