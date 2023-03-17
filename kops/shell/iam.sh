@@ -15,3 +15,4 @@ aws iam create-user --user-name kops
 aws iam add-user-to-group --user-name kops --group-name kops
 
 aws iam create-access-key --user-name kops
+
