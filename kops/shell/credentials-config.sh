@@ -1,3 +1,4 @@
+#!/bin/bash
 aws configure #set the credentials from aws
 
 
